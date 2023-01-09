@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>explore flexbox</title>
+    <script src="https://kit.fontawesome.com/9a845be905.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            padding: 20px 30px;
+            background-color: chocolate;
+            max-width: 95%;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        nav a:hover {
+            padding: 10px 15px;
+            background-color: green;
+            color: white;
+            border-radius: 10px;
+            border: 1px solid pink;
+        }
+
+        .form-section {
+            display: flex;
+            flex-direction: column;
+            /* max-width: 100%; */
+            width: 50%;
+
+
+        }
+
+        .form-container-main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            /* width: 50%; */
+        }
+
+        .form-section input {
+            margin-top: 10px;
+            padding: 10px 15px;
+            font-size: 22px;
+
+        }
+
+        .form-section input[type="submit"] {
+            background-color: plum;
+            border: none;
+            width: 25%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span>
+                <a href="">Home</a>
+                <a href="">Mobaile</a>
+                <a href="">Contract</a>
+                <a href="">Address</a>
+                <a href="">About us</a>
+            </span>
+            <span>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </nav>
+    </header>
+
+
+    <div class="form-container-main">
+        <div class="form-section">
+            <h1>Please Login</h1>
+            <input type="text" name="name" id="name" placeholder="enter your name">
+            <input type="email" name="email" id="email" placeholder="enter your email" required>
+            <input type="submit" value="submit">
+        </div>
+    </div>
+</body>
+
+</html>
